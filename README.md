@@ -2,4 +2,7 @@
 Some haskell code
 
 ## Run
-cabal run
+stack run
+
+## Test
+stack build --test --force-dirty
