@@ -22,3 +22,6 @@ spec = do
   describe "doubleSmallNumber" $ do
     it "should double a number only if it is smaller or equal than 80" $ do
       doubleSmallNumber 80 `shouldBe` 160
+  describe "putting two lists together" $ do
+    it "should put two list together by using ++" $ do
+      [1, 2] ++ [3, 4] `shouldBe` [1, 2, 3, 4]
