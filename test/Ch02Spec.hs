@@ -27,3 +27,5 @@ spec = do
       [1, 2] ++ [3, 4] `shouldBe` [1, 2, 3, 4]
     it "should concatenate strings by using ++" $ do
       "hello " ++ "world!" `shouldBe` "hello world!"
+    it "should concatenate arrays of chars by using ++" $ do
+      ['h', 'a'] ++ ['l', 'l', 'o'] `shouldBe` "hallo"
