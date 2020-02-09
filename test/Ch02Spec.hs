@@ -25,3 +25,5 @@ spec = do
   describe "putting two lists together" $ do
     it "should put two list together by using ++" $ do
       [1, 2] ++ [3, 4] `shouldBe` [1, 2, 3, 4]
+    it "should concatenate strings by using ++" $ do
+      "hello " ++ "world!" `shouldBe` "hello world!"
