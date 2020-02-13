@@ -74,3 +74,8 @@ spec
     it "should verify if an element belongs to a list, a.k.a. infix function" $ do
       2 `elem` [1, 2, 3, 5] `shouldBe` True
       100 `elem` [1, 3, 5] `shouldBe` False
+      -- Texas Ranges
+    it "should make a list from n to m" $ do
+      [1 .. 5] `shouldBe` [1, 2, 3, 4, 5]
+      ['a' .. 'e'] `shouldBe` "abcde"
+      [1,3 .. 10] `shouldBe` [1, 3, 5, 7, 9]
